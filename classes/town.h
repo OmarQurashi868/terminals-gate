@@ -10,12 +10,10 @@ private:
     string name;
     Person residents[ MAX_RESIDENTS ];
     int current_residentsNumber;
-    int requiredLevel;
 public:
-    Town(string name, int requiredLevel ) 
+    Town(string name ) 
     {
         this->name = name;
-        this->requiredLevel = requiredLevel;
         this->current_residentsNumber = 0;
     }
 
@@ -34,10 +32,6 @@ public:
         this->current_residentsNumber = current_residentsNumber;
     }
 
-    void setRequiredLevel(int requiredLevel) {
-        this->requiredLevel = requiredLevel;
-    }
-
 
     // Getters
     string getName() const {
@@ -47,10 +41,5 @@ public:
     int getCurrentResidentsNumber() const {
         return current_residentsNumber;
     }
-
-    int getRequiredLevel() const {
-        return requiredLevel;
-    }
-
 
 };

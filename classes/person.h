@@ -15,12 +15,18 @@ public:
     {
         this->name = name;
     }
-
+ // setters
     void setName(string name)
     {
         this->name = name;
     }
+
+    void setLocation( Town* location ) 
+    {
+        this->location = location;
+    }
     
+// getters 
     string getName()
     {
         return this->name;

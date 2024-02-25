@@ -34,5 +34,10 @@ public:
         this->level = given_level;
     }
 
+    void travel( Town* destination ) // function to implement travelling between towns 
+    {   
+        this->setLocation(destination);
+        
+    }
 
 };
