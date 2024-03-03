@@ -11,10 +11,10 @@ private:
     string name;
     Person residents[MAX_RESIDENTS];
     int current_residentsNumber;
-    string traversableTowns[MAX_TOWNS];
+    string* traversableTowns;
 
 public:
-    Town(string name, int residentsNumber, string traversableTowns)
+    Town(string name, int residentsNumber, string traversableTowns[])
     {
         this->name = name;
         this->current_residentsNumber = residentsNumber;
