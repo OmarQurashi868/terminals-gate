@@ -9,12 +9,14 @@ void startNewGame();
 void intro();
 int gameLoop();
 
-Town towns[6] = {Town("Whispering Pines", 6, {"", "", ""}),
-                 Town("Everbrook", 4, {"", "", ""}),
-                 Town("Moonhaven", 4, {"", "", ""}),
-                 Town("Foggy Bottom", 7, {"", "", ""}),
-                 Town("Stardust Valley", 3, {"", "", ""}),
-                 Town("Crystal Lake", 2, {"", "", ""})};
+string t1tt[3] = {"", "", ""};
+
+Town towns[6] = {Town("Whispering Pines", 6, t1tt),
+                 Town("Everbrook", 4, t1tt),
+                 Town("Moonhaven", 4, t1tt),
+                 Town("Foggy Bottom", 7, t1tt),
+                 Town("Stardust Valley", 3, t1tt),
+                 Town("Crystal Lake", 2, t1tt)};
 
 int main()
 {
